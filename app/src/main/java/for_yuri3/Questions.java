@@ -1,4 +1,4 @@
-package com.example.for_yuri3;
+package for_yuri3;
 
 public class Questions
 {

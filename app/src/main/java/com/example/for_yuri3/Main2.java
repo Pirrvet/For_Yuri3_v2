@@ -1,4 +1,4 @@
-//package com.example.for_yuri3;
+//package for_yuri3;
 //
 //import androidx.appcompat.app.AlertDialog;
 //import androidx.appcompat.app.AppCompatActivity;

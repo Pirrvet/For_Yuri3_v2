@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Какая планета является самой большой в Солнечной системе?"
         android:textSize="24sp"
