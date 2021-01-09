@@ -1,6 +1,6 @@
-package for_yuri3;
+package for_yuri3.questions;
 
-public class Questions
+public class solSysQuestions
 {
     public static String[] nQuestions =
             {

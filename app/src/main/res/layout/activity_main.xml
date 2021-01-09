@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/solarsystem"
-    tools:context=".MainActivity">
+    tools:context=".MainActivitytrash">
 
     <TextView
         android:id="@+id/question"
