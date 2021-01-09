@@ -17,6 +17,7 @@ import for_yuri3.questions.themeQuestions;
 public class MainActivity extends AppCompatActivity {
     Button button1, button2, button3, button4;
     TextView question;
+    int num;
 
     ArrayList<String> questionList = new ArrayList<>(Arrays.asList(themeQuestions.nQuestions));
     ArrayList<String> choiceList = new ArrayList<>(Arrays.asList(themeQuestions.nChoices));
@@ -26,14 +27,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.qtheme_activity);
 
-        //r =new Random();
-        button1 = (Button) findViewById(R.id.buttonqt1);
-        button1.setText(choiceList.get(themeQuestions)[0])
-        button1.setText(getText(questionList[0]);
-        button2 = (Button) findViewById(R.id.buttonqt2);
-        button3 = (Button) findViewById(R.id.buttonqt3);
-        button4 = (Button) findViewById(R.id.buttonqt4);
         question = (TextView) findViewById(R.id.questionqt);
+        question.setText(questionList.get(num=0));
+        button1 = (Button) findViewById(R.id.buttonqt1);
+        button1.setText(choiceList.get(num=0));
+        //button1.setText(getText(questionList[0]));
+        button2 = (Button) findViewById(R.id.buttonqt2);
+        button2.setText(choiceList.get(num=1));
+        button3 = (Button) findViewById(R.id.buttonqt3);
+        button3.setText(choiceList.get(num=2));
+        button4 = (Button) findViewById(R.id.buttonqt4);
+        button4.setText(choiceList.get(num=3));
+
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
