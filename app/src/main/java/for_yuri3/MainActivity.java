@@ -1,11 +1,15 @@
 package for_yuri3;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.View;
 import android.widget.*;
 import android.os.Bundle;
+import android.content.Intent;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -28,23 +32,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.qtheme_activity);
 
         question = (TextView) findViewById(R.id.questionqt);
-        question.setText(questionList.get(num=0));
+        question.setText(questionList.get(num = 0));
         button1 = (Button) findViewById(R.id.buttonqt1);
-        button1.setText(choiceList.get(num=0));
+        button1.setText(choiceList.get(num = 0));
         //button1.setText(getText(questionList[0]));
         button2 = (Button) findViewById(R.id.buttonqt2);
-        button2.setText(choiceList.get(num=1));
+        button2.setText(choiceList.get(num = 1));
         button3 = (Button) findViewById(R.id.buttonqt3);
-        button3.setText(choiceList.get(num=2));
+        button3.setText(choiceList.get(num = 2));
         button4 = (Button) findViewById(R.id.buttonqt4);
-        button4.setText(choiceList.get(num=3));
+        button4.setText(choiceList.get(num = 3));
 
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-new MainActivitytrash();
+startActivity(new Intent(MainActivity.this, MainActivitytrash.class));
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
@@ -70,4 +73,4 @@ new MainActivitytrash();
         });
 
     }
-   }
+}
