@@ -47,28 +47,28 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-startActivity(new Intent(MainActivity.this, MainActivitytrash.class));
+startActivity(new Intent(MainActivity.this, SolarSystemActivity.class));
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                new MainActivitytrash();
+                startActivity(new Intent(MainActivity.this, AnimalActivity.class));
             }
         });
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                new MainActivitytrash();
+                startActivity(new Intent(MainActivity.this, GeographyActivity.class));
             }
         });
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                new MainActivitytrash();
+                startActivity(new Intent(MainActivity.this, SolarSystemActivity.class));
             }
         });
 
