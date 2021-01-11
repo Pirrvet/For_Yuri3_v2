@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         button2.setText(choiceList.get(num = 1));
         button3 = (Button) findViewById(R.id.buttonqt3);
         button3.setText(choiceList.get(num = 2));
-        button4 = (Button) findViewById(R.id.buttonqt4);
-        button4.setText(choiceList.get(num = 3));
+        //button4 = (Button) findViewById(R.id.buttonqt4);
+        //button4.setText(choiceList.get(num = 3));
 
 
         button1.setOnClickListener(new View.OnClickListener() {
@@ -64,13 +64,13 @@ startActivity(new Intent(MainActivity.this, SolarSystemActivity.class));
                 startActivity(new Intent(MainActivity.this, GeographyActivity.class));
             }
         });
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        //button4.setOnClickListener(new View.OnClickListener() {
+           // @Override
+       //     public void onClick(View view) {
 
-                startActivity(new Intent(MainActivity.this, SolarSystemActivity.class));
-            }
-        });
+              //  startActivity(new Intent(MainActivity.this, SolarSystemActivity.class));
+           // }
+       // });
 
     }
 }
