@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Простой квест</string>
+    <string name="buttonhidden">ButtonHidden</string>
 </resources>
