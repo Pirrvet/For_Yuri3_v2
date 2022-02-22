@@ -19,7 +19,7 @@ import java.util.Random;
 import for_yuri3.questions.themeQuestions;
 
 public class MainActivity extends AppCompatActivity {
-    Button button1, button2, button3, button4;
+    Button button1, button2, button3, button4, button5;
     TextView question;
     int num;
 
@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
         button2.setText(choiceList.get(num = 1));
         button3 = (Button) findViewById(R.id.buttonqt3);
         button3.setText(choiceList.get(num = 2));
+        button4 = (Button) findViewById(R.id.buttonqt4);
+        button4.setText(choiceList.get(num = 3));
+        button5 = (Button) findViewById(R.id.buttonqt5);
+        button5.setText(choiceList.get(num = 4));
         //button4 = (Button) findViewById(R.id.buttonqt4);
         //button4.setText(choiceList.get(num = 3));
 
@@ -62,6 +66,20 @@ startActivity(new Intent(MainActivity.this, SolarSystemActivity.class));
             public void onClick(View view) {
 
                 startActivity(new Intent(MainActivity.this, GeographyActivity.class));
+            }
+        });
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this, GravityFallsActivity.class));
+            }
+        });
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this, MinecraftActivity.class));
             }
         });
         //button4.setOnClickListener(new View.OnClickListener() {

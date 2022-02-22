@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/questionqt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:text="QQQQQ"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="610dp"
+        android:layout_marginTop="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionqt"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonqt1"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="50dp"
+                android:text="[eq4" />
+
+            <Button
+                android:id="@+id/buttonqt2"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="50dp"
+                android:text="[eq2" />
+
+            <Button
+                android:id="@+id/buttonqt3"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="50dp"
+                android:text="[eq1" />
+
+            <Button
+                android:id="@+id/buttonqt4"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="50dp"
+                android:text="[eq3" />
+
+            <Button
+                android:id="@+id/buttonqt5"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="50dp"
+                android:text="[eq4" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<Button
+        android:id="@+id/buttonqt4"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="70dp"
+        android:text="[eq4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonqt3"
+        tools:layout_editor_absoluteX="100dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
